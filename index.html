@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daily Planner</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+   <!--composing the body, form and table -->
+<body class="container text-center" style="margin-top:30px" background="beach.JPG">
+    <br>
+    <h3> MY DAILY PLANNER</h3>
+    <div class="card">
+        <div class="card-body">
+        <div class="row">
+        <div class="col-sm">
+        <div class="form-group">
+            <label for="new-start-date">Start Planner</label>
+            <input type="date" class="form-control" id="new-start-date">
+        </div>
+        </div>
+        <div class="col-sm">
+            <div class="form-group">
+                <label for="new-end-date">End Planner</label>
+                <input type="date" class="form-control" id="new-end-date">
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+            <div class="form-group">
+            <label for="new-activity">My Daily Activity</label>
+            <input type="text" class="form-control" id="new-activity" placeholder="Activity">
+    </div>         
+    </div>
+    </div>
+    <div>
+    <button id="create" class="btn btn-danger form-control">Creating Activity</button>
+    </div>
+    </div>
+    </div>
+    <table id="notes" class="table table-primary table-striped">
+       <tr>
+           <th>Activity</th>
+           <th>Date Planned</th>
+           <th>Start Planner</th>
+           <th>End Planner</th>
+           <th>Decision</th>
+           </tr> 
+
+    </table>
+
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
